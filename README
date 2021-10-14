@@ -1,0 +1,19 @@
+# ==============================================================================
+# JMX Example
+# ==============================================================================
+Module1  publish a service
+Module2  service client
+Module3  observer on service changes
+
+# ----------------
+# How to Run it
+# ----------------
+
+$(JDK_HOME)/bin/java -Dcom.sun.management.jmxremote.port=9999 \
+                     -Dcom.sun.management.jmxremote.authenticate=false \
+                     -Dcom.sun.management.jmxremote.ssl=false \
+                     com.test.module1.Main
+                     
+$(JDK_HOME)/bin/java com.test.module2.Main
+
+$(JDK_HOME)/bin/java com.test.module3.Main
