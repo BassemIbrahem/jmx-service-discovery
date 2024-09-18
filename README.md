@@ -1,7 +1,7 @@
 # JMX Example
 The Java Management Extensions (JMX) framework provides an easily configurable, scalable, reliable infrastructure for managing Java application either locally or remotely. It comes out of the box with JDK and this is an example on using it for service discovery
 
-# What is inside
+# Wh is inside
 
 - *Module1*  publish a service
 - *Module2*  service client
